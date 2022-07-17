@@ -17,6 +17,7 @@ public class richestCustomerWealthArray {
                 innerSum += accounts[i][j];
             }
 
+            //to check max value of requirement instead of making array of values for each customer
             if(innerSum > maxValue){
                 maxValue = innerSum;
             }
