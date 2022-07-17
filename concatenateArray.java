@@ -1,8 +1,17 @@
+// Write a program to Concatenate the array.
+// Input:
+// {1,2,1,3}
+
+// Output:
+// {1,2,1,3,1,2,1,3}
+
+
+
 public class concatenateArray{
     public static int[] solution(int[] nums){
         int len = nums.length;
         int[] ans = new int[2*len];
-        // ans = nums; wrong step as it will reassign the address of nums array to new ans array.
+        // ans = nums; -> wrong step as it will reassign the address of nums array to new ans array.
         int pointer = 0;
         int turn = 1;
         while(turn < 3){
