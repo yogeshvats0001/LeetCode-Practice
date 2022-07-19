@@ -17,11 +17,11 @@ public class containerWithMostWaterArray {
         int maxArea = Integer.MIN_VALUE;
         for(int i=0; i<heights.length-1; i++){
             for(int j=i+1; j<heights.length; j++){
-                length = j-i;
+                width = j-i;
                 if(heights[i] > heights[j]){
-                    width = heights[j];
+                    length = heights[j];
                 }else{
-                    width = heights[i];
+                    length = heights[i];
                 }
 
                 int innerArea = length * width;
