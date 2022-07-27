@@ -29,7 +29,6 @@ public class createTargetArray {
         for(int j=0; j<len; j++){
             target[j] = myList.get(j);
         }
-        
         return target;
     }
 
