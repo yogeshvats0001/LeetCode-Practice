@@ -37,3 +37,5 @@ public class encodeDecodeTinyUrl {
 
     }
 }
+
+//Note: Since we dont have to worry about how algorithm will work and just want encoding and decoding works properly for any particular URL.
