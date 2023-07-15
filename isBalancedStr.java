@@ -28,12 +28,11 @@ public class isBalancedStr {
     public static int balancedStringSplit(String s, int index){
         if(index >= s.length()) return 0;
 
-        int countL = 0;
-        int countR = 0;
+        int count = 0;
         while(index <= s.length()){
-            if(s.charAt(index) == 'R') countR++;
-            else countL++;
-            if(countL == countR){
+            if(s.charAt(index) == 'R') count++;
+            else count--;
+            if(count == 0){
                 return 1 + balancedStringSplit(s, index+1);
             }
             index++;
@@ -47,7 +46,7 @@ public class isBalancedStr {
     }
 
     public static void main(String[] args) {
-        String str = "LLLLRRRR";
+        String str = "RLRRRLLRLL";
         int result = balancedStringSplit(str);
         System.out.println(result);
     }
